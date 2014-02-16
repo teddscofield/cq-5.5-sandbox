@@ -204,6 +204,7 @@
   Inclusion of repositories in POMs is controversial, to say the least.
   It would be best if you proxied the Adobe repository using a Maven
   Repository Manager. Once you do that, remove these sections.
+  TODO: move this to settings.xml maybe
   -->
   <repositories>
     <repository>
