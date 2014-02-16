@@ -59,7 +59,7 @@
                         <embedded>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>sandbox-5.5-project-bundle</artifactId>
-                            <target>/apps/sandboxapps/install</target>
+                            <target>/apps/sandbox/install</target>
                         </embedded>
                     </embeddeds>
                     <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
