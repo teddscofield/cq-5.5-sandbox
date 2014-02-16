@@ -7,7 +7,7 @@
 <entry key="dependencies" />
 <entry key="packageFormatVersion">2</entry>
 <entry key="description">Sandbox 5.5 Project Package</entry>
-<entry key="group">Tedd Scofield Discovery, LLC</entry>
-<entry key="name">sandbox-5.5-project-content</entry>
-<entry key="path">/etc/packages/Tedd Scofield Discovery, LLC/sandbox-5.5-project-content-1.0-SNAPSHOT.zip</entry>
+<entry key="group">tss-cq-sandbox</entry>
+<entry key="name">sandbox-5.5-project-components</entry>
+<entry key="path">/etc/packages/tss-cq-sandbox/sandbox-5.5-project-content-1.0-SNAPSHOT.zip</entry>
 </properties>

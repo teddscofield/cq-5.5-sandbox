@@ -5,15 +5,15 @@
     sling:resourceType="cq/packaging/components/pack/definition"
     buildCount="1"
     cqVersion="5.5.0"
-    group="Tedd Scofield Discovery, LLC"
+    group="tss-cq-sandbox"
     name="sandbox-5.5-project-content"
-    path="/etc/packages/Tedd Scofield Discovery, LLC/sandbox-5.5-project-content-1.0-SNAPSHOT"
+    path="/etc/packages/tss-cq-sandbox/sandbox-5.5-project-content-1.0-SNAPSHOT"
     version="1.0-SNAPSHOT">
     <filter jcr:primaryType="nt:unstructured">
         <f0
             jcr:primaryType="nt:unstructured"
             mode="replace"
-            root="/apps/sandboxapps"
+            root="/apps/sandbox"
             rules="[]"/>
     </filter>
 </jcr:root>
