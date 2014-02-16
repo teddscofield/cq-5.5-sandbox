@@ -53,8 +53,16 @@
                 <artifactId>content-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
-                    <group>Tedd Scofield Discovery, LLC</group>
-                    <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
+                    <group>tss-cq-sandbox</group>
+                    <!--<filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>-->
+                    <builtContentDirectory>src/main/content/jcr_root</builtContentDirectory>
+                    <filters>
+                        <filter>
+                            <root>/apps/sandbox</root>
+                            <mode>replace</mode>
+                        </filter>
+                    </filters>
+
                     <embeddeds>
                         <embedded>
                             <groupId>${project.groupId}</groupId>
