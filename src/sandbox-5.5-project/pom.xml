@@ -14,8 +14,8 @@
   <description>Root POM for Sandbox CQ 5.5 Project</description>
 
   <modules>
-    <module>bundle</module>
-    <module>content</module>
+    <module>component-libs</module>
+    <module>components</module>
   </modules>
 
   <!-- ====================================================================== -->

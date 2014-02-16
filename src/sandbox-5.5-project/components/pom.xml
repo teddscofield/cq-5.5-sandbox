@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <!-- ====================================================================== -->
-    <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
+    <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <parent>
         <groupId>tss-cq-sandbox</groupId>
@@ -12,20 +12,21 @@
     </parent>
 
     <!-- ====================================================================== -->
-    <!-- P R O J E C T D E S C R I P T I O N -->
+    <!-- P R O J E C T  D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>sandbox-5.5-project-content</artifactId>
+    <artifactId>sandbox-5.5-project-components</artifactId>
     <packaging>content-package</packaging>
-    <name>Sandbox 5.5 Project Package</name>
+    <name>Sandbox 5.5 Project Components</name>
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>sandbox-5.5-project-bundle</artifactId>
+            <artifactId>sandbox-5.5-project-component-libs</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
+
     <build>
         <resources>
             <resource>

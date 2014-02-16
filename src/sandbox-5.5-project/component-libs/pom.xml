@@ -15,9 +15,9 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>sandbox-5.5-project-bundle</artifactId>
+    <artifactId>sandbox-5.5-project-component-libs</artifactId>
     <packaging>bundle</packaging>
-    <name>Sandbox 5.5 Project Bundle</name>
+    <name>Sandbox 5.5 Project Component Libs</name>
 
     <dependencies>
         <dependency>
@@ -85,7 +85,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>tss-cq-sandbox.sandbox-5.5-project-bundle</Bundle-SymbolicName>
+                        <Bundle-SymbolicName>tss-cq-sandbox.sandbox-5.5-project-component-libs</Bundle-SymbolicName>
                     </instructions>
                 </configuration>
             </plugin>
