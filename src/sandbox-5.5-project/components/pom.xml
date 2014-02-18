@@ -140,12 +140,28 @@
         <configuration>
           <failOnError>true</failOnError>
           <group>tss-cq-sandbox</group>
-          <!--<filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>-->
+          <!-- rely on the <resources/> section to define which files are included because
+          <buildContentDirectory/> offers zero filtering options (e.g. cannot easily exclude
+          *.less files) -->
           <!--<builtContentDirectory>src/main/content/jcr_root</builtContentDirectory>-->
+
+          <!-- define CQ package filters here in the POM rather than a vault configuration
+          file in a project META-INF directory.  It's just fewer places to jump around to.
+          Trade off is that it makes the POM more verbose -->
+          <!--<filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>-->
+
           <verbose>true</verbose>
           <filters>
             <filter>
               <root>/apps/sandbox</root>
+              <mode>replace</mode>
+            </filter>
+            <filter>
+              <root>/apps/sandbox/install</root>
+              <mode>replace</mode>
+            </filter>
+            <filter>
+              <root>/apps/sandbox/config</root>
               <mode>replace</mode>
             </filter>
           </filters>
