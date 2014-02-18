@@ -1,5 +1,5 @@
 <!doctype html><%
-%><%@include file="apps/sandbox/site1/global.jsp"%>
+%><%@include file="/apps/sandbox/site1/global.jsp"%>
 <%
 // instantiate model object and assign to pageContext here
 

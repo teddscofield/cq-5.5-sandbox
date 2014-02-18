@@ -25,6 +25,66 @@
             <artifactId>sandbox-5.5-project-component-libs</artifactId>
             <version>${project.version}</version>
         </dependency>
+      <dependency>
+        <groupId>org.apache.sling</groupId>
+        <artifactId>org.apache.sling.jcr.jcr-wrapper</artifactId>
+        <!-- javax.jcr -->
+      </dependency>
+      <dependency>
+        <groupId>org.apache.sling</groupId>
+        <artifactId>org.apache.sling.api</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq</groupId>
+        <artifactId>cq-commons</artifactId>
+        <!-- com.day.cq.commons -->
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq.wcm</groupId>
+        <artifactId>cq-wcm-commons</artifactId>
+        <!-- com.day.cq.wcm.commons -->
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq.wcm</groupId>
+        <artifactId>cq-wcm-api</artifactId>
+        <!-- com.day.cq.wcm.api -->
+      </dependency>
+      <dependency>
+        <groupId>com.day.commons</groupId>
+        <artifactId>day-commons-jstl</artifactId>
+        <!-- javax.servlet.jsp.jstl.core -->
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq.wcm</groupId>
+        <artifactId>cq-wcm-taglib</artifactId>
+        <!-- com.day.cq.wcm.tags -->
+      </dependency>
+      <dependency>
+        <groupId>org.apache.sling</groupId>
+        <artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
+        <!-- org.apache.sling.scripting.jsp.taglib -->
+      </dependency>
+      <dependency>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>com.adobe.granite.xssprotection</artifactId>
+        <!-- com.adobe.granite.xss -->
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq.wcm</groupId>
+        <artifactId>cq-wcm-core</artifactId>
+        <!-- com.day.cq.wcm.core.components -->
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <!-- org.apache.commons.lang3 -->
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+      </dependency>
+
+
     </dependencies>
 
     <build>
@@ -47,6 +107,26 @@
                     <includeEmptyDirs>true</includeEmptyDirs>
                 </configuration>
             </plugin>
+
+          <!-- pre-compile JSPs -->
+          <plugin>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>maven-jspc-plugin</artifactId>
+            <configuration>
+              <sourceDirectory>${basedir}/src/main/content/jcr_root</sourceDirectory>
+            </configuration>
+            <!-- JSPC Dependencies -->
+            <dependencies>
+            </dependencies>
+            <executions>
+              <execution>
+                <id>compile-jsp</id>
+                <goals>
+                  <goal>jspc</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
 
             <plugin>
                 <groupId>com.day.jcr.vault</groupId>

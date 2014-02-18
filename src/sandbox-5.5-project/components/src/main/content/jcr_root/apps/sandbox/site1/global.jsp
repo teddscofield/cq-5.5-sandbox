@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@page session="false" import="javax.jcr.*,
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%><%
+%><%@page session="false" import="javax.jcr.*,
         org.apache.sling.api.resource.Resource,
         org.apache.sling.api.resource.ValueMap,
         com.day.cq.commons.inherit.InheritanceValueMap,
@@ -12,15 +12,15 @@
         com.day.cq.wcm.api.designer.Style,
         com.day.cq.wcm.api.components.ComponentContext,
         com.day.cq.wcm.api.components.EditContext"
-%><%
+%><%--
 
   Set up tag libraries for use in JSPs
 
-%><%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0" %><%
+--%><%@taglib prefix="sling" uri="http://sling.apache.org/taglibs/sling/1.0" %><%
 %><%@taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0" %><%
 %><%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %><%
 %><%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %><%
-%><%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %><%
+%><%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %><%--
 
   The following page context attributes are initialized via the <cq:defineObjects/>
   tag, are available for use in JSP code and can be passed into Model (bean) objects
@@ -46,4 +46,4 @@
     @param resourceDesign design of the addressed resource (aka "myDesign")
     @param currentStyle style of the addressed resource (aka "actstyle")
 
-%><cq:defineObjects /><%
+--%><cq:defineObjects />

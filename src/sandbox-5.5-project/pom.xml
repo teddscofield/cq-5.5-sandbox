@@ -44,6 +44,87 @@
   <!-- ====================================================================== -->
   <dependencyManagement>
     <dependencies>
+
+      <!-- TSS: I did not find this to work at all. Instead I had to add each dependency
+      to the dependency management section here. -->
+      
+      <!--<dependency>-->
+        <!--&lt;!&ndash; use com.day.cq.wcm as groupId if you are using an AEM version previous to 5.5 &ndash;&gt;-->
+        <!--<groupId>com.day.cq</groupId>-->
+        <!--<artifactId>cq-quickstart-product-dependencies</artifactId>-->
+        <!--<version>5.5.0</version>-->
+        <!--<type>pom</type>-->
+        <!--<scope>import</scope>-->
+      <!--</dependency>-->
+
+      <dependency>
+        <groupId>javax.jcr</groupId>
+        <artifactId>jcr</artifactId>
+        <version>2.0</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq</groupId>
+        <artifactId>cq-commons</artifactId>
+        <version>5.5.2</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq.wcm</groupId>
+        <artifactId>cq-wcm-commons</artifactId>
+        <version>5.5.6</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq.wcm</groupId>
+        <artifactId>cq-wcm-api</artifactId>
+        <version>5.5.2</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.day.commons</groupId>
+        <artifactId>day-commons-jstl</artifactId>
+        <version>1.1.4</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq.wcm</groupId>
+        <artifactId>cq-wcm-taglib</artifactId>
+        <version>5.5.2</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.sling</groupId>
+        <artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
+        <version>2.1.6</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.adobe.granite</groupId>
+        <artifactId>com.adobe.granite.xssprotection</artifactId>
+        <version>5.5.24</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.day.cq.wcm</groupId>
+        <artifactId>cq-wcm-core</artifactId>
+        <version>5.5.52</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.0.1</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.sling</groupId>
+        <artifactId>org.apache.sling.jcr.jcr-wrapper</artifactId>
+        <version>2.0.0</version>
+        <scope>provided</scope>
+      </dependency>
+
       <dependency>
         <groupId>org.osgi</groupId>
         <artifactId>org.osgi.core</artifactId>
@@ -104,6 +185,7 @@
         <version>4.8.1</version>
         <scope>test</scope>
       </dependency>
+
     </dependencies>
   </dependencyManagement>
 
@@ -172,6 +254,11 @@
             <username>${crx.username}</username>
             <password>${crx.password}</password>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.sling</groupId>
+          <artifactId>maven-jspc-plugin</artifactId>
+          <version>2.0.6</version>
         </plugin>
       </plugins>
     </pluginManagement>
