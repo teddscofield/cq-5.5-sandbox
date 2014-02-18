@@ -133,9 +133,11 @@
         <artifactId>content-package-maven-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
+          <failOnError>true</failOnError>
           <group>tss-cq-sandbox</group>
           <!--<filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>-->
           <builtContentDirectory>src/main/content/jcr_root</builtContentDirectory>
+          <verbose>true</verbose>
           <filters>
             <filter>
               <root>/apps/sandbox</root>
@@ -152,6 +154,14 @@
           </embeddeds>
           <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
         </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <!--<goal>package</goal>-->
+              <goal>install</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
@@ -192,8 +202,8 @@
                 </goals>
                 <configuration>
                   <targetURL>http://${publish.crx.host}:${publish.crx.port}/crx/packmgr/service.jsp</targetURL>
-                  <username>${publish.crx.username}</username>
-                  <password>${publish.crx.password}</password>
+                  <!--<username>${publish.crx.username}</username>-->
+                  <!--<password>${publish.crx.password}</password>-->
                 </configuration>
               </execution>
             </executions>

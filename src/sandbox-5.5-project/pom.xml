@@ -233,21 +233,21 @@
           <groupId>org.apache.sling</groupId>
           <artifactId>maven-sling-plugin</artifactId>
           <version>2.1.0</version>
-          <configuration>
-            <username>${crx.username}</username>
-            <password>${crx.password}</password>
-          </configuration>
+          <!--<configuration>-->
+            <!--<username>${crx.username}</username>-->
+            <!--<password>${crx.password}</password>-->
+          <!--</configuration>-->
         </plugin>
         <plugin>
           <groupId>com.day.jcr.vault</groupId>
           <artifactId>content-package-maven-plugin</artifactId>
           <version>0.0.20</version>
           <extensions>true</extensions>
-          <configuration>
-            <failOnError>true</failOnError>
-            <username>${crx.username}</username>
-            <password>${crx.password}</password>
-          </configuration>
+          <!--<configuration>-->
+            <!--<failOnError>true</failOnError>-->
+            <!--<username>${crx.username}</username>-->
+            <!--<password>${crx.password}</password>-->
+          <!--</configuration>-->
         </plugin>
         <plugin>
           <groupId>org.apache.sling</groupId>
