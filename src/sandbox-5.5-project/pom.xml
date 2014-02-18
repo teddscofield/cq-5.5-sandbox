@@ -47,7 +47,7 @@
 
       <!-- TSS: I did not find this to work at all. Instead I had to add each dependency
       to the dependency management section here. -->
-      
+
       <!--<dependency>-->
         <!--&lt;!&ndash; use com.day.cq.wcm as groupId if you are using an AEM version previous to 5.5 &ndash;&gt;-->
         <!--<groupId>com.day.cq</groupId>-->
@@ -258,7 +258,7 @@
         <plugin>
           <groupId>org.apache.sling</groupId>
           <artifactId>maven-jspc-plugin</artifactId>
-          <version>2.0.6</version>
+          <version>2.0.8</version>
         </plugin>
       </plugins>
     </pluginManagement>
