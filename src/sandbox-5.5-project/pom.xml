@@ -49,12 +49,12 @@
       to the dependency management section here. -->
 
       <!--<dependency>-->
-        <!--&lt;!&ndash; use com.day.cq.wcm as groupId if you are using an AEM version previous to 5.5 &ndash;&gt;-->
-        <!--<groupId>com.day.cq</groupId>-->
-        <!--<artifactId>cq-quickstart-product-dependencies</artifactId>-->
-        <!--<version>5.5.0</version>-->
-        <!--<type>pom</type>-->
-        <!--<scope>import</scope>-->
+      <!--&lt;!&ndash; use com.day.cq.wcm as groupId if you are using an AEM version previous to 5.5 &ndash;&gt;-->
+      <!--<groupId>com.day.cq</groupId>-->
+      <!--<artifactId>cq-quickstart-product-dependencies</artifactId>-->
+      <!--<version>5.5.0</version>-->
+      <!--<type>pom</type>-->
+      <!--<scope>import</scope>-->
       <!--</dependency>-->
 
       <dependency>
