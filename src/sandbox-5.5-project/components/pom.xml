@@ -146,7 +146,7 @@
                     <embeddeds>
                         <embedded>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>sandbox-5.5-project-bundle</artifactId>
+                            <artifactId>sandbox-5.5-project-component-libs</artifactId>
                             <target>/apps/sandbox/install</target>
                         </embedded>
                     </embeddeds>
