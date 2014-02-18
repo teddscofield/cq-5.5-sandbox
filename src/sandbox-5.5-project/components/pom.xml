@@ -113,7 +113,12 @@
         <groupId>org.apache.sling</groupId>
         <artifactId>maven-jspc-plugin</artifactId>
         <configuration>
+          <jasperClassDebugInfo>false</jasperClassDebugInfo>
           <sourceDirectory>${basedir}/src/main/content/jcr_root</sourceDirectory>
+          <!-- insure that compiled JSPs are not included in the component package built
+          later on in the build.  Point being we insure there are no errors in the JSP
+          code while letting CQ generate its own compiled version of the JSP -->
+          <outputDirectory>${project.build.directory}/ignored-jsps</outputDirectory>
         </configuration>
         <!-- JSPC Dependencies -->
         <dependencies>
@@ -136,7 +141,7 @@
           <failOnError>true</failOnError>
           <group>tss-cq-sandbox</group>
           <!--<filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>-->
-          <builtContentDirectory>src/main/content/jcr_root</builtContentDirectory>
+          <!--<builtContentDirectory>src/main/content/jcr_root</builtContentDirectory>-->
           <verbose>true</verbose>
           <filters>
             <filter>
